@@ -318,7 +318,7 @@ describe('My Little Hero', function () {  //define suite title by passing a stri
 });
 
 
-/*
+
 it('TC-021 Create button is clickable after 1-4 are filled in', function () {
     browser.url('');
     const inputName = $(sel.nameK).setValue("LadyBug");
@@ -330,7 +330,7 @@ it('TC-021 Create button is clickable after 1-4 are filled in', function () {
     expect(create).toEqual(true);
 });
 
- */
+
 
 
 
