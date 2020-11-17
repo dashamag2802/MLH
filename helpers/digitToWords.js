@@ -1,4 +1,3 @@
-
     var th = ['','thousand','million', 'billion','trillion'];
     var dg = ['zero','one','two','three','four', 'five','six','seven','eight','nine'];
     var tn = ['ten','eleven','twelve','thirteen', 'fourteen','fifteen','sixteen', 'seventeen','eighteen','nineteen'];

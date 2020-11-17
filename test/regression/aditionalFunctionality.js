@@ -3,6 +3,7 @@ const data = require('../../data/testData.json');
 const exp = require('../../data/expected.json');
 const inputValues4AndClick = require('../../helpers/inputValues4AndClick');
 const findTextAge = require('../../helpers/findTextAge');
+const digitToWords = require('../../helpers/digitToWords');
 
 describe('Checking the aditional functionality', function () {
 
@@ -19,6 +20,19 @@ describe('Checking the aditional functionality', function () {
 
         });
 
+            it('TC-0002 Check is correct for age in the texts', function () {
+                browser.url('');
+                for(let i = 0; i < data.checkAge.length; i++){
+                    inputValues4AndClick(data.name.Hero159, data.gender.she[0], data.checkAge[i], data.storyType.Comedy[0]);
+                    let testAge = findTextAge();
+                    let expRes = digitToWords(data.checkAge[i]);
+                    expect(testAge).toEqual(expRes);
+                    $(sel.tryAgainK).click();
+                }
+
+        });
+
     });
 
 });
+
